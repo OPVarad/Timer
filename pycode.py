@@ -1,4 +1,5 @@
 import time
+from playsound import playsound
 from tkinter import *
 from tkinter import messagebox
 
@@ -66,6 +67,7 @@ def submit():
         time.sleep(1)
 
         if (temp == 0):
+            playsound('/home/dark_soul/GIT/Timer/timer.mp3')
             messagebox.showinfo("Time Countdown", "Time's up ")
         
         temp -= 1
